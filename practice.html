@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8"></meta>
+  <meta charset="utf-8" />
   <title>practice Vol.1 2012-04-15</title>
 
   <style type="text/css">
@@ -11,11 +11,11 @@
   . 은 class 
   # 은 ID
   */
-  
-	body {
-       font-size: 0.8em;
-       font-height: dotum;
-       line-height: 1.6em;
+
+body {
+font-size: 0.8em;
+font-height: dotum;
+line-height: 1.6em;
 }
 body.black{
 background-color: black;
@@ -62,10 +62,9 @@ padding: 20px 0;
 	.txt {
 			color: red;
 	}
-
-	div detail{
-			color:red;
-	}
+	/* div.~ 는 div 태그의 id detail, div .~ div 안 쪽에 ~id (다른 태그)
+	.detail{color:red;} div#deatil{#} div #detail div.~~ div .~~ #aa.bb
+	*/
 	</style>  
   
 </head>
@@ -76,8 +75,8 @@ padding: 20px 0;
     <h1>JavaScript</h1>
    </header>
   <div id="toolbar">
-  <input type="button" value="black" />
-  <input type="button" value="withe" /> 
+  <input type="button" value="black" onclick="document.getElementById('body').className='black'" />
+  <input type="button" value="white" onclick="document.getElementById('body').className='white'" /> 
  </div>
 <nav>
 <ul>
@@ -89,7 +88,6 @@ padding: 20px 0;
 <li>객체</li>
 </ul>
 </nav>
-</body>
 <article>
 <h2>변수와 상수</h2>
 <div id="detail">
@@ -108,4 +106,3 @@ padding: 20px 0;
 </div>
 </body>
 </html>
-
