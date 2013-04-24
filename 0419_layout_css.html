@@ -6,24 +6,39 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
 <style type="text/css">
-body{max-width:900px;min-width:400px}
 
 /* #header, #content, #footer{width:100%} 
 이와 같이 공통적 디자일은 묶어서 쓸 경우에...
 두번 씩 훑어봐야해서,, 요즘은 요소별로 디자인함
 */
-
+body {text-align:center}
+#wrap{margin:auto;width:800px;height:700px}
 /* 상단 요소 */
-#header{float:left;height:100%;background-color:#f96;p.align:center}
+#header{height:99px;width:800px;background-color:#f96;border-bottom:1px solid #fff}
+/* 콘텐츠 요소 */
+#content{width:800px;height:550px}
+/* 메뉴 요소 */
+#lnb{height:450px;width:199px;background-color:#0f6;border-right:1px solid #fff;float:left}
 /* 중간 요소 */
-#content{float:top;height:85%;background-color:#69f;margin-top:5px;margin-bottom:5px;border-top:1px solid #fff}
+#container{;height:450px;width:398px;background-color:#69f;border-right:2px solid #fff;float:left}
+/* 우측 요소 */
+#rnb{height:450px;width:200px;background-color:#5f9;float:left}
+/* 중간 요소2*/
+#container2{width:800px;height:97px;background-color:#555;border-top:3px solid #fff;clear:both}
 /* 하단 요소 */
-#footer{float:bottom;height:15%;background-color:#5f9}
+#footer{width:800px;height:48px;background-color:#f00;margin-top:2px}
 </style>
 </head>
 <body>
+<div id="wrap">
 <div id="header">상단요소</div>
-<div id="content">중간요소</div>
+<div id="content">
+<div id="lnb">메뉴요소</div>
+<div id="container">중간요소</div>
+<div id="rnb">우측요소</div>
+<div id="container2">중간요소2</div>
+</div>
 <div id="footer">하단요소</div>
+</div>
 </body>
 </html>
